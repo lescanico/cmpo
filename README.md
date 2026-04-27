@@ -6,15 +6,16 @@
 
 ## The problem
 
-In longitudinal care systems, what is measured is often not what
+In longitudinal care systems, what is measured is often not what\
 determines whether the system is actually sustainable.
 
-A clinic can appear stable on visible metrics such as: - schedule
-utilization
+A clinic can appear stable on visible metrics such as:
+- schedule utilization
 - appointment availability
 - visit throughput
 
-while true internal burden is rising through: - follow-up obligations
+while true internal burden is rising through:
+- follow-up obligations
 - asynchronous work (messages, coordination, documentation)
 - deferred or latent demand
 
@@ -29,14 +30,16 @@ This creates a structural failure mode:
 This repository provides a minimal, auditable demonstration of a simple
 claim:
 
-> **Partial observability alone is sufficient to produce divergence
-> between visible workload and total burden.**
+> **Partial observability alone is sufficient to produce divergence**\
+> **between visible workload and total burden.**
 
-Even under deliberately simplified assumptions: - demand is fungible
+Even under deliberately simplified assumptions:
+- demand is fungible
 - capacity is stable
 - no strategic behavior is modeled
 
-the system can still: - maintain stable visible utilization
+the system can still:
+- maintain stable visible utilization
 - accumulate latent demand
 - increase total workload over time
 
@@ -59,7 +62,8 @@ Under common operating conditions:
 -   latent burden accumulates
 -   total workload rises
 
-This produces a gap between: - what the system *appears* to be handling
+This produces a gap between:
+- what the system *appears* to be handling
 - what it is *actually* carrying
 
 ------------------------------------------------------------------------
@@ -90,11 +94,13 @@ No external dependencies required.
 
 This is a **minimal conceptual model**, not a production system.
 
-It is intended to: - illustrate a structural failure mode
+It is intended to:
+- illustrate a structural failure mode
 - provide a clear, reproducible demonstration
 - serve as a starting point for further work
 
-It does **not**: - provide clinical decision support
+It does **not**:
+- provide clinical decision support
 - use real patient data
 - model full operational complexity
 
@@ -103,7 +109,6 @@ It does **not**: - provide clinical decision support
 ## Why this matters
 
 If decisions are made using only visible metrics:
-
 -   apparent slack may be misinterpreted as available capacity
 -   intake may be expanded at the wrong time
 -   hidden workload may be displaced onto clinicians
@@ -129,6 +134,6 @@ If divergence appears even in this minimal setting, then:
 
 ## Intellectual property notice
 
-This repository contains a minimal conceptual implementation intended for
-research and demonstration purposes. It does not represent a production system
-or complete operational framework.
+This repository contains a minimal conceptual implementation intended\
+for research and demonstration purposes. It does not represent a\
+production system or complete operational framework.
